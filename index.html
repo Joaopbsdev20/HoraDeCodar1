@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar</title>
+</head>
+
+<body>
+
+    <script>
+
+        //  Escreva um programa em Javascript e crie uma variável chamada "nome_do_carro" e atribua - a um valor "Fusca".Exiba - a ao usuário.
+
+        //  Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]".
+
+        // Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário.
+        // Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]".
+
+        function Fusca() {
+
+            var nome_do_carro = document.write("Fusca");
+            var nome = prompt("Informe seu nome:");
+            var idade = prompt("Informe sua idade");
+            document.write("Olá " + nome + " sua idade é " + idade);
+            console.log(nome)
+        }
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        function Retangulo() {
+
+            var base = parseInt(prompt("Informe o valor da base: "));
+            var altura = parseInt(prompt("Informe o valor da altura: "));
+
+            area = base * altura;
+
+            document.write(`O valor da area é: ${base} * ${altura} = ${area}`);
+        }
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        function Quadrado() {
+
+            var lado = parseInt(prompt("Informe o valor do lado"));
+
+            A = lado * lado;
+
+            document.write(`O valor de lado** é: ${lado} * ${lado} = ${A}`);
+        }
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        function Losango() {
+
+            var diagonalMaior = parseInt(prompt("Informe o valor da diagonalMaior"));
+            var diagonalMenor = parseInt(prompt("Informe o valor da diagonalMenor"));
+
+            A = (diagonalMaior * diagonalMenor) / 2;
+
+            document.write(`O valor do losango é: ${diagonalMaior} * ${diagonalMenor} / 2 = ${A}`);
+
+        }
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        function Trapezio() {
+
+            var baseMaior = parseInt(prompt("Informe o valor da baseMaior"));
+            var baseMenor = parseInt(prompt("Informe o valor da baseMenor"));
+            var altura = parseInt(prompt("Informe o valor da altura"));
+
+            A = (baseMaior + baseMenor) * altura / 2;
+
+            document.write(`O valor do losango é: ${baseMaior} + ${baseMenor} * ${altura} / 2 = ${A}`);
+        }
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        function Triângulo() {
+
+            var base = parseInt(prompt("Informe o valor da base: "));
+            var altura = parseInt(prompt("Informe o valor da altura: "));
+
+            area = (base * altura) / 2;
+
+            document.write(`O valor da area é: ${base} * ${altura} / 2 = ${area}`);
+        }  
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        function Círculo(){
+
+            let pi = 3.14;
+            var r = parseInt(prompt(`Informe o valor de r: `));
+
+            A = (pi) * (r*r);
+
+            document.write(`O valor da area é: ${pi} * ${r} = ${A}`);
+        }
+
+
+
+    </script>
+    <button onclick="Fusca()">Clique no Fusca</button>
+    <button onclick="Retangulo()">Clique no Retângulo</button>
+    <button onclick="Quadrado()">Clique no Quadrado</button>
+    <button onclick="Losango()">Clique no losango</button>
+    <button onclick="Trapezio()">Clique no trapezio</button>
+    <button onclick="Triângulo()">Clique no Triângulo</button>
+    <button onclick="Círculo()">Clique no Círculo</button>
+
+</body>
+
+</html>
